@@ -18,6 +18,7 @@ inquirer
 
         selection = inquirerResponse.dk;
         console.log(selection);
+
         if (selection === "BasicCard") {
             inquirer
                 .prompt([{
@@ -33,9 +34,9 @@ inquirer
                     let question = new BasicCard(inquirerResponse.front, inquirerResponse.back);
                     console.log(question.front);
                     console.log(question.back);
-
                 });
         };
+
         if (selection === "ClozeCard") {
             inquirer
                 .prompt([{
@@ -56,9 +57,6 @@ inquirer
                     } else {
                         console.log("Please try again!")
                     }
-
-
-
                 });
         };
     });
